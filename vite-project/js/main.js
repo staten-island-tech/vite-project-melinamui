@@ -1,6 +1,10 @@
 import "../styles/style.css";
 import javascriptLogo from "./javascript.svg";
 import { setupCounter } from "../counter.js";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
+
 import { menu } from "./menu";
 console.log(menu);
 
