@@ -5,6 +5,7 @@ const menu = [
     popular: "yes",
     vegan: "no",
     instock: "yes",
+    img: "",
   },
   {
     name: "Roasted Pork Rice Noodles",
