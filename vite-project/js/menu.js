@@ -5,7 +5,7 @@ const menu = [
     popular: "yes",
     vegan: "no",
     instock: "yes",
-    img: "",
+    img: "https://redhousespice.com/wp-content/uploads/2017/09/dim-sum-har-gow-dumplings.jpg",
   },
   {
     name: "Roasted Pork Rice Noodles",
@@ -13,6 +13,7 @@ const menu = [
     popular: "yes",
     vegan: "no",
     instock: "yes",
+    img: "",
   },
   {
     name: "Chicken Feet",

@@ -6,10 +6,11 @@ AOS.init();
 import { menu } from "./menu";
 console.log(menu);
 
-document.querySelector("#app").innerHTML = `
+/*document.querySelector("#app").innerHTML = `
   <div>
   <p></p>
   </div>
 `;
 
 setupCounter(document.querySelector("#counter"));
+*/
