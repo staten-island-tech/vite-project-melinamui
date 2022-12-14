@@ -6,6 +6,16 @@ AOS.init();
 import { menu } from "./menu";
 console.log(menu);
 
+import { DOMSelectors } from "./dom";
+console.log(DOMSelectors);
+
+let getPopular = function () {
+  data
+    .filter((food) => food.menu.popular.includes("yes"))
+    .forEach((food) => food.menu.name);
+};
+console.log(getPopular);
+
 /*document.querySelector("#app").innerHTML = `
   <div>
   <p></p>
