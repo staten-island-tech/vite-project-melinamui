@@ -4,4 +4,5 @@ const DOMSelectors = {
   form: document.getElementById("form"),
   button: document.getElementById("btn"),
 };
+
 export { DOMSelectors };

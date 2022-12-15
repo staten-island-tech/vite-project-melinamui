@@ -10,12 +10,25 @@ import { DOMSelectors } from "./dom";
 console.log(DOMSelectors);
 
 let getPopular = function () {
-  data
-    .filter((food) => food.menu.popular.includes("yes"))
-    .forEach((food) => food.menu.name);
+  menu
+    .filter((food) => food.popular.includes("yes"))
+    .forEach((food) => console.log(food.name));
 };
-console.log(getPopular);
+getPopular();
 
+let getInStock = function () {
+  menu
+    .filter((food) => food.instock.includes("yes"))
+    .forEach((food) => console.log(food.name));
+};
+getInStock();
+
+let getVegan = function () {
+  menu
+    .filter((food) => food.vegan.includes("yes"))
+    .forEach((food) => console.log(food.name));
+};
+getVegan();
 /*document.querySelector("#app").innerHTML = `
   <div>
   <p></p>

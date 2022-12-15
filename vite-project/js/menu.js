@@ -30,5 +30,4 @@ const menu = [
     instock: "yes",
   },
 ];
-
 export { menu };
