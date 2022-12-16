@@ -13,9 +13,9 @@ h6 {
   margin: 2rem;
 }
 
-#btn,
-#btn:link,
-#btn:visited {
+.btn,
+.btn:link,
+.btn:visited {
   font-family: "Kosugi Maru", sans-serif;
   padding: 2rem 4rem;
   display: inline-block;
@@ -27,16 +27,16 @@ h6 {
   animation: moveInBottom 0.5s ease-out 0.75s;
   animation-fill-mode: backwards;
 }
-#btn:hover {
+.btn:hover {
   transform: translateY(-0.3rem);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0.2);
 }
-#btn:active {
+.btn:active {
   transform: translateY(-1px);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0.2);
 }
 
-#btn {
+.btn {
   color: deeppink;
   background-color: #e8fbff;
   border-color: dodgerblue;
