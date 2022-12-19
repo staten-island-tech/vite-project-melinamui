@@ -9,7 +9,8 @@ let getPopular = function () {
       console.log(food.name);
       DOMSelectors.cards.insertAdjacentHTML(
         "afterbegin",
-        `<img src="${food.img}"/>`
+        `<img src="${food.img}"/>
+        <h1>${food.name}</h1>`
       );
     });
 };

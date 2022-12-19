@@ -8,7 +8,7 @@ console.log(DOMSelectors);
 import { menu } from "./menu";
 console.log(menu);
 
-DOMSelectors.popular.addEventListener("submit", function (loadPop) {
+DOMSelectors.form.addEventListener("popular", function (loadPop) {
   getPopular();
   loadPop.preventDefault();
 });
