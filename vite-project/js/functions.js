@@ -7,7 +7,10 @@ let getPopular = function () {
     .filter((food) => food.popular.includes("yes"))
     .forEach((food) => {
       console.log(food.name);
-      DOMSelectors.cards.insertAdjacentElement = `<h1>${menu.img}</h1>`;
+      DOMSelectors.cards.insertAdjacentHTML(
+        "afterbegin",
+        `<img src="${food.img}"/>`
+      );
     });
 };
 getPopular();

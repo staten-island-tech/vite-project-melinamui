@@ -3,14 +3,16 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
 import "./functions";
-
 import { DOMSelectors } from "./dom";
 console.log(DOMSelectors);
+import { menu } from "./menu";
+console.log(menu);
 
-DOMSelectors.form.addEventListener("submit", function (clickPop) {
+DOMSelectors.popular.addEventListener("submit", function (loadPop) {
   getPopular();
-  clickPop.preventDefault();
+  loadPop.preventDefault();
 });
+
 /*document.querySelector("#app").innerHTML = `
   <div>
   <p></p>
