@@ -8,10 +8,22 @@ console.log(DOMSelectors);
 import { menu } from "./menu";
 console.log(menu);
 
-DOMSelectors.form.addEventListener("popular", function (loadPop) {
-  getPopular();
-  loadPop.preventDefault();
-});
+/*DOMSelectors.querySelectors("#popular").addEventListener(
+  "click",
+  function (loadPop) {
+    getPopular();
+    loadPop.preventDefault();
+  }
+);
+*/
+
+DOMSelectors.querySelectors("#popular").addEventListener(
+  "click",
+  function (loadPop) {
+    getPopular();
+    loadPop.preventDefault();
+  }
+);
 
 /*document.querySelector("#app").innerHTML = `
   <div>
