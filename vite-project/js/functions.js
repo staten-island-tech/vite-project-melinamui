@@ -32,13 +32,7 @@ DOMSelectors.cards.insertAdjacentElement(
 getAllProducts();*/
 
 const products = {
-  getAllProducts: function(){
-    DOMSelectors.DOMSelectors.cards.insertAdjacentHTML(
-      "beforebegin",
-      `<img src="${[menu.name]}"/>
-      <h1>${[menu.name]}</h1>`
-    );
-  },
+
   getPopular: function(){
     menu
     .filter((food) => food.popular.includes("yes"))
