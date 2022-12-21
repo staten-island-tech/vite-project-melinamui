@@ -15,7 +15,7 @@ console.log(menu);
         <h1>${food.name}</h1>`
     });
     }
-  };*/
+  };
 
 let getAllProducts = function (){
   menu
@@ -29,8 +29,32 @@ DOMSelectors.cards.insertAdjacentElement(
     `);
   });
 };
-getAllProducts();
+getAllProducts();*/
 
+const products = {
+  getAllProducts: function(){
+    DOMSelectors.DOMSelectors.cards.insertAdjacentHTML(
+      "beforebegin",
+      `<img src="${products}.img}"/>
+      <h1>${[products].name}</h1>`
+    );
+  },
+  getPopular: function(){
+    menu
+    .filter((food) => food.popular.includes("yes"))
+    .forEach((food) => {
+      console.log(food.name);
+      DOMSelectors.cards.insertAdjacentHTML(
+        "afterbegin",
+        `<img src="${food.img}"/>
+        <h1>${food.name}</h1>`
+      );
+    });
+  }
+};
+products.getAllProducts();
+products.getPopular();
+/*
 let getPopular = function () {
   menu
     .filter((food) => food.popular.includes("yes"))
@@ -43,7 +67,7 @@ let getPopular = function () {
       );
     });
 };
-getPopular();
+getPopular();*/
 
 let getInStock = function () {
   menu
