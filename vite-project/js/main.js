@@ -8,20 +8,17 @@ console.log(DOMSelectors);
 import { menu } from "./menu";
 console.log(menu);
 
-const element = DOMSelectors.cards;
-element.remove();
-
 DOMSelectors.popular.addEventListener("click", function (loadPop) {
   getPopular();
   loadPop.preventDefault();
-  element.remove();
+  DOMSelectors.cards.remove();
   DOMSelectors.popular.disabled = true;
 });
 
 DOMSelectors.vegan.addEventListener("click", function (loadVeg) {
   getVegan();
   loadVeg.preventDefault();
-  element.remove();
+  DOMSelectors.cards.remove();
   DOMSelectors.vegan.disabled = true;
 });
 
