@@ -19,7 +19,7 @@ DOMSelectors.querySelectors("#popular").addEventListener(
   "submit",
   function (loadPop) {
     clearFields();
-    loadPop.remove();
+    Node.remove();
     getPopular();
     loadPop.preventDefault();
   }
