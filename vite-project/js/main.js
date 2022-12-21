@@ -8,19 +8,12 @@ console.log(DOMSelectors);
 import { menu } from "./menu";
 console.log(menu);
 
-function clearBox(elementID)
-{
-    document.getElementById(elementID).innerHTML = "";
-}
-
 DOMSelectors.popular.addEventListener("click", function (loadPop) {
-  clearBox();
   getPopular();
   loadPop.preventDefault();
 });
 
 DOMSelectors.vegan.addEventListener("click", function (loadVeg) {
-  clearBox();
   getVegan();
   loadVeg.preventDefault();
 });
