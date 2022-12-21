@@ -29,7 +29,7 @@ DOMSelectors.cards.insertAdjacentElement(
     `);
   });
 };
-getAllProducts();*/
+getAllProducts();
 
 const products = {
   getPopular: function(){
