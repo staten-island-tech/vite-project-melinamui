@@ -9,16 +9,16 @@ import { menu } from "./menu";
 console.log(menu);
 
 DOMSelectors.popular.addEventListener("click", function (loadPop) {
-  DOMSelectors.cards.remove();
   getPopular();
   loadPop.preventDefault();
+  DOMSelectors.cards.innerHTML = "";
   DOMSelectors.popular.disabled = true;
 });
 
 DOMSelectors.vegan.addEventListener("click", function (loadVeg) {
-  DOMSelectors.cards.remove();
   getVegan();
   loadVeg.preventDefault();
+  DOMSelectors.cards.innerHTML = "";
   DOMSelectors.vegan.disabled = true;
 });
 
