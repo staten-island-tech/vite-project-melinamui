@@ -57,6 +57,18 @@ products.getPopular();
     );
   },
 */
+let getAllProducts = function (){
+  menu
+  .filter((food) => food.show.includes("all"))
+  .forEach((food) => {
+    console.log(food.name);
+    DOMSelectors.cards.insertAdjacentHTML(
+      "afterbegin",
+      `<img src="${food.img}"/>
+      <h1>${food.name}</h1>`
+    );
+  });
+}
 
 let getPopular = function () {
   menu

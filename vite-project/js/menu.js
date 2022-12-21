@@ -1,5 +1,6 @@
 const menu = [
   {
+    show: "all",
     name: "Shrimp Dumplings",
     chinese_name: "",
     popular: "yes",
@@ -8,6 +9,7 @@ const menu = [
     img: "https://redhousespice.com/wp-content/uploads/2017/09/dim-sum-har-gow-dumplings.jpg",
   },
   {
+    show: "all",
     name: "Roasted Pork Rice Noodles",
     chinese_name: "",
     popular: "yes",
@@ -16,6 +18,7 @@ const menu = [
     img: "",
   },
   {
+    show: "all",
     name: "Chicken Feet",
     chinese_name: "",
     popular: "no",
@@ -23,6 +26,7 @@ const menu = [
     instock: "no",
   },
   {
+    show: "all",
     name: "Bok Choy",
     chinese_name: "",
     popular: "yes",
@@ -31,3 +35,4 @@ const menu = [
   },
 ];
 export { menu };
+
