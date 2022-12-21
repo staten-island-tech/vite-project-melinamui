@@ -48,6 +48,15 @@ const products = {
 products.getAllProducts();
 products.getPopular();
 /*
+
+  getAllProducts: function(){
+    DOMSelectors.DOMSelectors.cards.insertAdjacentHTML(
+      "beforebegin",
+      `<img src="${[menu.name]}"/>
+      <h1>${[menu.name]}</h1>`
+    );
+  },
+
 let getPopular = function () {
   menu
     .filter((food) => food.popular.includes("yes"))
