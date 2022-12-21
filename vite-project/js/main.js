@@ -16,7 +16,7 @@ const clearFields = function () {
 clearFields();
 
 DOMSelectors.querySelectors("#popular").addEventListener(
-  "click",
+  "submit",
   function (loadPop) {
     clearFields();
     loadPop.remove();
