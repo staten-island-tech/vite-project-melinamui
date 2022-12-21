@@ -23,7 +23,7 @@ let getAllProducts = function (){
     .forEach((food) => {
       console.log(food.name);
 DOMSelectors.cards.insertAdjacentElement(
-    "beforebegin",
+    "afterbegin",
     `<img src="${food.img}
     <h1>${food.name}</h1>
     `);
