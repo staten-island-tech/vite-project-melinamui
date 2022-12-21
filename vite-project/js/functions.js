@@ -32,7 +32,6 @@ DOMSelectors.cards.insertAdjacentElement(
 getAllProducts();*/
 
 const products = {
-
   getPopular: function(){
     menu
     .filter((food) => food.popular.includes("yes"))
