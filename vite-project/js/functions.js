@@ -19,9 +19,10 @@ console.log(menu);
 
 let getAllProducts = function (){
   menu
-  .forEach((food) => {
-  console.log(food.name);
-  DOMSelectors.cards.insertAdjacentElement(
+    .filter((food) => food.vegan.includes("yes"))
+    .forEach((food) => {
+      console.log(food.name);
+DOMSelectors.cards.insertAdjacentElement(
     "beforebegin",
     `<img src="${food.img}
     <h1>${food.name}</h1>
