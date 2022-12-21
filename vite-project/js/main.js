@@ -11,7 +11,10 @@ console.log(menu);
 getAllProducts();
 DOMSelectors.querySelectors("#popular").addEventListener(
   "click",
-  getPopular()
+  function (loadPop) {
+    getPopular();
+    loadPop.preventDefault();
+  }
 );
 
 /*DOMSelectors.querySelectors("#popular").addEventListener(
