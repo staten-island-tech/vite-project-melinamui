@@ -8,14 +8,14 @@ console.log(DOMSelectors);
 import { menu } from "./menu";
 console.log(menu);
 
-getAllProducts();
+/* getAllProducts();
 DOMSelectors.querySelectors("#popular").addEventListener(
   "click",
   function (loadPop) {
     getPopular();
     loadPop.preventDefault();
   }
-);
+); */
 
 /*DOMSelectors.querySelectors("#popular").addEventListener(
   "click",
