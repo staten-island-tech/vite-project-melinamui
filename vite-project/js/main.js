@@ -8,6 +8,12 @@ console.log(DOMSelectors);
 import { menu } from "./menu";
 console.log(menu);
 
+DOMSelectors.cards.insertAdjacentHTML(
+  "beforebegin",
+        `<img src="${food.img}"/>
+        <h1>${food.name}</h1>`
+      );
+
 DOMSelectors.popular.addEventListener("click", function (loadPop) {
   DOMSelectors.cards.innerHTML = "";
   getPopular();
