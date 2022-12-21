@@ -16,8 +16,14 @@ console.log(menu);
   }
 );
 */
-
-
+getAllProducts();
+DOMSelectors.querySelectors("#popular").addEventListener(
+  "click",
+  function (loadPop) {
+    getPopular();
+    loadPop.preventDefault();
+  }
+);
 
 /*document.querySelector("#app").innerHTML = `
   <div>
