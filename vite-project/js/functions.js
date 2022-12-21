@@ -69,6 +69,7 @@ let getAllProducts = function (){
     );
   });
 }
+getAllProducts();
 
 let getPopular = function () {
   menu
