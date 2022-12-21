@@ -12,14 +12,8 @@ getAllProducts();
 DOMSelectors.querySelectors("#popular").addEventListener(
   "click",
   function() {
-    if (document.body.classList.contains("cards")) {
-  document.body.classList.remove("cards");
-  getPopular();
+    getPopular();
   }
-  else {
-    getAllProducts();
-  }
-}
 );
 
 /*DOMSelectors.querySelectors("#popular").addEventListener(
