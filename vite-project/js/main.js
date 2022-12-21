@@ -8,6 +8,15 @@ console.log(DOMSelectors);
 import { menu } from "./menu";
 console.log(menu);
 
+getAllProducts();
+DOMSelectors.querySelectors("#popular").addEventListener(
+  "click",
+  function(){
+  document.body.id.remove("cards");
+  getPopular();
+  }
+);
+
 /*DOMSelectors.querySelectors("#popular").addEventListener(
   "click",
   function (loadPop) {
@@ -15,7 +24,7 @@ console.log(menu);
     loadPop.preventDefault();
   }
 );
-*/
+
 getAllProducts();
 DOMSelectors.querySelectors("#popular").addEventListener(
   "click",
@@ -24,8 +33,7 @@ DOMSelectors.querySelectors("#popular").addEventListener(
     loadPop.preventDefault();
   }
 );
-
-/*document.querySelector("#app").innerHTML = `
+document.querySelector("#app").innerHTML = `
   <div>
   <p></p>
   </div>
