@@ -5,7 +5,7 @@ const DOMSelectors = {
   popular: document.getElementById("popular"),
   instock: document.getElementById("instock"),
   vegan: document.getElementById("vegan"),
-  cards: document.getElementsByClassName("cards"),
+  cards: document.getElementsById("cards"),
 };
 
 export { DOMSelectors };
