@@ -9,6 +9,7 @@ import { menu } from "./menu";
 console.log(menu);
 
 DOMSelectors.popular.addEventListener("click", function (loadPop) {
+  DOMSelectors.cards.innerHTML = "";
   getPopular();
   loadPop.preventDefault();
   DOMSelectors.popular.disabled = true;
@@ -16,7 +17,7 @@ DOMSelectors.popular.addEventListener("click", function (loadPop) {
 });
 
 DOMSelectors.vegan.addEventListener("click", function (loadVeg) {
-  document.getElementById("cards").innerHTML = "";
+  DOMSelectors.cards.innerHTML = "";
   getVegan();
   loadVeg.preventDefault();
   DOMSelectors.vegan.disabled = true;
