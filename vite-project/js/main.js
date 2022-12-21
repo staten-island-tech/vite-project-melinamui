@@ -12,7 +12,7 @@ DOMSelectors.popular.addEventListener("click", function (loadPop) {
   getPopular();
   loadPop.preventDefault();
   DOMSelectors.popular.disabled = true;
-  document.getElementById("cards").innerHTML = "";
+  DOMSelectors.cards.innerHTML = "";
 });
 
 DOMSelectors.vegan.addEventListener("click", function (loadVeg) {
@@ -20,7 +20,7 @@ DOMSelectors.vegan.addEventListener("click", function (loadVeg) {
   getVegan();
   loadVeg.preventDefault();
   DOMSelectors.vegan.disabled = true;
-  document.getElementById("cards").innerHTML = "";
+  DOMSelectors.cards.innerHTML = "";
 });
 
 const getPopular = function () {
