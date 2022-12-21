@@ -8,9 +8,17 @@ console.log(DOMSelectors);
 import { menu } from "./menu";
 console.log(menu);
 
+const clearFields = function () {
+  DOMSelectors.popular.value = "";
+  DOMSelectors.instock.value = "";
+  DOMSelectors.vegan.value = "";
+};
+clearFields();
+
 DOMSelectors.querySelectors("#popular").addEventListener(
   "click",
   function (loadPop) {
+    clearFields();
     getPopular();
     loadPop.preventDefault();
   }

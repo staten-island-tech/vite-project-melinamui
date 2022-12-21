@@ -70,7 +70,6 @@ let getAllProducts = function (){
   });
 }
 getAllProducts();
-export {getAllProducts};
 
 let getPopular = function () {
   menu
