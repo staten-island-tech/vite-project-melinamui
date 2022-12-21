@@ -56,34 +56,20 @@ products.getPopular();
       <h1>${[menu.name]}</h1>`
     );
   },
-*/
-let getAllProducts = function (){
-  menu
-  .filter((food) => food.show.includes("all"))
-  .forEach((food) => {
-    console.log(food.name);
-    DOMSelectors.cards.insertAdjacentHTML(
-      "beforebegin",
-      `<img src="${food.img}"/>
-      <h1>${food.name}</h1>`
-    );
-  });
-}
-getAllProducts();
 
-let getPopular = function () {
+function getAllProducts() {
   menu
-    .filter((food) => food.popular.includes("yes"))
+    .filter((food) => food.show.includes("all"))
     .forEach((food) => {
       console.log(food.name);
       DOMSelectors.cards.insertAdjacentHTML(
-        "afterbegin",
+        "beforebegin",
         `<img src="${food.img}"/>
-        <h1>${food.name}</h1>`
+      <h1>${food.name}</h1>`
       );
     });
-};
-getPopular();
+}
+getAllProducts();
 
 let getInStock = function () {
   menu
@@ -98,3 +84,5 @@ let getVegan = function () {
     .forEach((food) => console.log(food.name));
 };
 getVegan();
+
+*/
