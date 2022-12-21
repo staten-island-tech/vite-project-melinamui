@@ -9,19 +9,17 @@ import { menu } from "./menu";
 console.log(menu);
 
 DOMSelectors.popular.addEventListener("click", function (loadPop) {
-  DOMSelectors.cards.innerHTML = "";
+  DOMSelectors.cards.remove();
   getPopular();
   loadPop.preventDefault();
   DOMSelectors.popular.disabled = true;
-  DOMSelectors.cards.innerHTML = "";
 });
 
 DOMSelectors.vegan.addEventListener("click", function (loadVeg) {
-  DOMSelectors.cards.innerHTML = "";
+  DOMSelectors.cards.remove();
   getVegan();
   loadVeg.preventDefault();
   DOMSelectors.vegan.disabled = true;
-  DOMSelectors.cards.innerHTML = "";
 });
 
 const getPopular = function () {
