@@ -8,6 +8,9 @@ console.log(DOMSelectors);
 import { menu } from "./menu";
 console.log(menu);
 
+import { getAllProducts } from "./functions";
+
+
 getAllProducts();
 DOMSelectors.querySelectors("#popular").addEventListener(
   "click",
