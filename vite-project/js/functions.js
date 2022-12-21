@@ -56,6 +56,7 @@ products.getPopular();
       <h1>${[menu.name]}</h1>`
     );
   },
+*/
 
 let getPopular = function () {
   menu
@@ -69,7 +70,7 @@ let getPopular = function () {
       );
     });
 };
-getPopular();*/
+getPopular();
 
 let getInStock = function () {
   menu
