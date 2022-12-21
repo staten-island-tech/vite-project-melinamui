@@ -11,10 +11,15 @@ console.log(menu);
 getAllProducts();
 DOMSelectors.querySelectors("#popular").addEventListener(
   "click",
-  function(){
-  document.body.id.remove("cards");
+  function() {
+    if (document.body.classList.contains("cards")) {
+  document.body.classList.remove("cards");
   getPopular();
   }
+  else {
+    getAllProducts();
+  }
+}
 );
 
 /*DOMSelectors.querySelectors("#popular").addEventListener(
