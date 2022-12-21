@@ -35,8 +35,8 @@ const products = {
   getAllProducts: function(){
     DOMSelectors.DOMSelectors.cards.insertAdjacentHTML(
       "beforebegin",
-      `<img src="${products}.img}"/>
-      <h1>${[products].name}</h1>`
+      `<img src="${[menu.name]}"/>
+      <h1>${[menu.name]}</h1>`
     );
   },
   getPopular: function(){
