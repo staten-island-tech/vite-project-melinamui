@@ -8,20 +8,33 @@ console.log(DOMSelectors);
 import { menu } from "./menu";
 console.log(menu);
 
+function remove() {
+  DOMSelectors.cards.remove();
+};
+
+const clearFields = function () {
+  DOMSelectors.cards.innerHTML="";
+}
 
 DOMSelectors.popular.addEventListener("click", function (loadPop) {
+  clearFields();
+  remove();
   getPopular();
   loadPop.preventDefault();
   DOMSelectors.popular.disabled = true;
 });
 
 DOMSelectors.instock.addEventListener("click", function (loadStock) {
+  clearFields();
+  remove();
   getInStock();
   loadStock.preventDefault();
   DOMSelectors.instock.disabled = true;
 });
 
 DOMSelectors.vegan.addEventListener("click", function (loadVeg) {
+  clearFields();
+  remove();
   getVegan();
   loadVeg.preventDefault();
   DOMSelectors.vegan.disabled = true;
