@@ -36,8 +36,3 @@ const menu = [
 ];
 export { menu };
 
-const map = menu.map(map.show.includes("all"));
-console.log(map);
-
-export {map};
-
