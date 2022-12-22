@@ -8,31 +8,36 @@ console.log(DOMSelectors);
 import { menu } from "./menu";
 console.log(menu);
 
-DOMSelectors.popular.addEventListener("click", function (loadPop) {
+DOMSelectors.emo.addEventListener("click", function () {
+  if (document.body.classList.contains("uwu")) {
+    document.body.classList.add("emo");
+    document.body.classList.remove("uwu");
+  } else {
+    document.body.classList.add("uwu");
+    document.body.classList.remove("emo");
+  }
+});
+
+DOMSelectors.popular.addEventListener("click", function () {
   getPopular();
-  loadPop.preventDefault();
   DOMSelectors.popular.disabled = true;
-  clearFields();
   remove();
 });
 
-DOMSelectors.instock.addEventListener("click", function (loadStock) {
+DOMSelectors.instock.addEventListener("click", function () {
   getInStock();
-  loadStock.preventDefault();
   DOMSelectors.instock.disabled = true;
-  clearFields();
   remove();
 });
 
-DOMSelectors.vegan.addEventListener("click", function (loadVeg) {
+DOMSelectors.vegan.addEventListener("click", function () {
   getVegan();
-  loadVeg.preventDefault();
   DOMSelectors.vegan.disabled = true;
-  clearFields();
   remove();
 });
 
 const getPopular = function () {
+  DOMSelectors.cards.innerHTML = "";
   menu
     .filter((food) => food.popular.includes("yes"))
     .forEach((food) => {
@@ -46,19 +51,21 @@ const getPopular = function () {
 };
 
 const getInStock = function () {
+  DOMSelectors.cards.innerHTML = "";
   menu
     .filter((food) => food.instock.includes("yes"))
     .forEach((food) => {
       console.log(food.name);
       DOMSelectors.cards.insertAdjacentHTML(
         "afterend",
-        `<div id = "one"><img src="${food.img}"/>
-      <h1>${food.name}</h1></div> `
+        `<div id = "one"> <img src="${food.img}"/>
+      <h1>${food.name}</h1></div>`
       );
     });
 };
 
 const getVegan = function () {
+  DOMSelectors.cards.innerHTML = "";
   menu
     .filter((food) => food.vegan.includes("yes"))
     .forEach((food) => {
@@ -70,10 +77,6 @@ const getVegan = function () {
       `
       );
     });
-};
-
-const clearFields = function () {
-  DOMSelectors.cards.innerHTML = "";
 };
 
 const remove = function () {
