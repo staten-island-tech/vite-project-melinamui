@@ -5,6 +5,10 @@
   justify-content: center;
 }
 
+#cards {
+  display: flex;
+}
+
 #img {
-  width: 10;
+  width: 100 px;
 }
