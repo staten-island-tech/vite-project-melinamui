@@ -13,6 +13,10 @@ h6 {
   margin: 2rem;
 }
 
+img{
+  width: 100px;
+}
+
 .btn,
 .btn:link,
 .btn:visited {
