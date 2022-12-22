@@ -17,7 +17,7 @@ DOMSelectors.popular.addEventListener("click", function (loadPop) {
 
 DOMSelectors.instock.addEventListener("click", function (loadStock) {
   getInStock();
-  loadVeg.preventDefault();
+  loadStock.preventDefault();
   DOMSelectors.instock.disabled = true;
 });
 
