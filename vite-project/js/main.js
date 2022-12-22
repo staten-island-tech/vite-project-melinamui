@@ -7,6 +7,8 @@ import { DOMSelectors } from "./dom";
 console.log(DOMSelectors);
 import { menu } from "./menu";
 console.log(menu);
+import { map } from "./menu";
+console.log(map);
 
 DOMSelectors.popular.addEventListener("click", function (loadPop) {
   getPopular();
