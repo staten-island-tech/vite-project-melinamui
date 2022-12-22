@@ -15,6 +15,12 @@ DOMSelectors.popular.addEventListener("click", function (loadPop) {
   DOMSelectors.popular.disabled = true;
 });
 
+DOMSelectors.instock.addEventListener("click", function (loadStock) {
+  getInStock();
+  loadVeg.preventDefault();
+  DOMSelectors.instock.disabled = true;
+});
+
 DOMSelectors.vegan.addEventListener("click", function (loadVeg) {
   getVegan();
   loadVeg.preventDefault();
@@ -33,7 +39,7 @@ const getPopular = function () {
       );
     });
 };
-/*
+
 const getInStock = function () {
   menu
     .filter((food) => food.instock.includes("yes"))
@@ -46,7 +52,6 @@ const getInStock = function () {
       );
     });
 };
-getInStock();*/
 
 const getVegan = function () {
   menu
