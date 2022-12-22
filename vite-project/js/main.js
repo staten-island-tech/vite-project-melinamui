@@ -11,32 +11,32 @@ console.log(menu);
 
 DOMSelectors.popular.addEventListener("click", function (loadPop) {
   clearFields();
-  erase();
+  element.remove(); 
   getPopular();
   loadPop.preventDefault();
   DOMSelectors.popular.disabled = true;
   clearFields();
-  erase();
+  element.remove(); 
 });
 
 DOMSelectors.instock.addEventListener("click", function (loadStock) {
   clearFields();
-  erase();
+  element.remove(); 
   getInStock();
   loadStock.preventDefault();
   DOMSelectors.instock.disabled = true;
   clearFields();
-  erase();
+  element.remove(); 
 });
 
 DOMSelectors.vegan.addEventListener("click", function (loadVeg) {
   clearFields();
-  erase();
+  element.remove(); 
   getVegan();
   loadVeg.preventDefault();
   DOMSelectors.vegan.disabled = true;
   clearFields();
-  erase();
+  element.remove(); 
 });
 
 const getPopular = function () {
@@ -83,10 +83,8 @@ const clearFields = function () {
   DOMSelectors.cards.innerHTML="";
 }
 
-const erase = function(){
-  document.getElementById("cards");
-  erase.remove();
-}
+const element = document.getElementById('cards');
+element.remove(); 
 
 /*DOMSelectors.querySelectors("#popular").addEventListener(
   "click",
