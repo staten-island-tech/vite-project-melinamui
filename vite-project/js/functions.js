@@ -1,4 +1,5 @@
 import { DOMSelectors } from "./dom";
+console.log(DOMSelectors);
 import { menu } from "./menu";
 console.log(menu);
 
