@@ -75,6 +75,7 @@ const getVegan = function () {
 
 const clearFields = function () {
   DOMSelectors.cards.innerHTML="";
+  DOMSelectors.cards.remove();
 }
 
 /*DOMSelectors.querySelectors("#popular").addEventListener(
