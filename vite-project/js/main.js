@@ -14,6 +14,7 @@ DOMSelectors.popular.addEventListener("click", function (loadPop) {
   getPopular();
   loadPop.preventDefault();
   DOMSelectors.popular.disabled = true;
+  clearFields();
   remove();
 });
 
@@ -22,6 +23,7 @@ DOMSelectors.instock.addEventListener("click", function (loadStock) {
   getInStock();
   loadStock.preventDefault();
   DOMSelectors.instock.disabled = true;
+  clearFields();
   remove();
 });
 
@@ -30,6 +32,7 @@ DOMSelectors.vegan.addEventListener("click", function (loadVeg) {
   getVegan();
   loadVeg.preventDefault();
   DOMSelectors.vegan.disabled = true;
+  clearFields();
   remove();
 });
 
