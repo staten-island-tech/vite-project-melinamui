@@ -37,8 +37,8 @@ const getPopular = function () {
       console.log(food.name);
       DOMSelectors.cards.insertAdjacentHTML(
         "afterend",
-        `<img src="${food.img}"/>
-        <h1>${food.name}</h1>`
+        `<div id = "cards"> <img src="${food.img}"/>
+        <h1>${food.name}</h1> </div>`
       );
     });
 };
@@ -50,8 +50,8 @@ const getInStock = function () {
       console.log(food.name);
       DOMSelectors.cards.insertAdjacentHTML(
         "afterend",
-        `<img src="${food.img}"/>
-      <h1>${food.name}</h1>`
+        `<div id = "cards"><img src="${food.img}"/>
+      <h1>${food.name}</h1> </div>`
       );
     });
 };
@@ -63,14 +63,15 @@ const getVegan = function () {
       console.log(food.name);
       DOMSelectors.cards.insertAdjacentHTML(
         "afterend",
-        `<img src="${food.img}"/>
-      <h1>${food.name}</h1>`
+        `<div id = "cards"><img src="${food.img}"/>
+      <h1>${food.name}</h1>
+      </div> `
       );
     });
 };
 
 const clearFields = function () {
-  DOMSelectors.form.innerHTML="";
+  DOMSelectors.cards.innerHTML="";
 }
 
 /*DOMSelectors.querySelectors("#popular").addEventListener(
