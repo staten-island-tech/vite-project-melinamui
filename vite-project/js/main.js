@@ -8,16 +8,13 @@ console.log(DOMSelectors);
 import { menu } from "./menu";
 console.log(menu);
 
-const element = DOMSelectors.cards;
-element.remove();
-
 const clearFields = function () {
   DOMSelectors.cards.innerHTML="";
 }
 
 DOMSelectors.popular.addEventListener("click", function (loadPop) {
   clearFields();
-  element.remove();
+  DOMSelectors.cards.remove();
   getPopular();
   loadPop.preventDefault();
   DOMSelectors.popular.disabled = true;
@@ -25,7 +22,7 @@ DOMSelectors.popular.addEventListener("click", function (loadPop) {
 
 DOMSelectors.instock.addEventListener("click", function (loadStock) {
   clearFields();
-  element.remove();
+  DOMSelectors.cards.remove();
   getInStock();
   loadStock.preventDefault();
   DOMSelectors.instock.disabled = true;
@@ -33,7 +30,7 @@ DOMSelectors.instock.addEventListener("click", function (loadStock) {
 
 DOMSelectors.vegan.addEventListener("click", function (loadVeg) {
   clearFields();
-  element.remove();
+  DOMSelectors.cards.remove();
   getVegan();
   loadVeg.preventDefault();
   DOMSelectors.vegan.disabled = true;
@@ -58,7 +55,7 @@ const getInStock = function () {
     .forEach((food) => {
       console.log(food.name);
       DOMSelectors.cards.insertAdjacentHTML(
-        "beforeend",
+        "afterend",
         `<img src="${food.img}"/>
       <h1>${food.name}</h1>`
       );
