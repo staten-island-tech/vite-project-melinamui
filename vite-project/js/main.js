@@ -10,25 +10,25 @@ console.log(menu);
 
 
 DOMSelectors.popular.addEventListener("click", function (loadPop) {
+  loadPop.preventDefault();
   clearFields();
   getPopular();
-  loadPop.preventDefault();
   DOMSelectors.popular.disabled = true;
   remove();
 });
 
 DOMSelectors.instock.addEventListener("click", function (loadStock) {
+  loadStock.preventDefault();
   clearFields();
   getInStock();
-  loadStock.preventDefault();
   DOMSelectors.instock.disabled = true;
   remove();
 });
 
 DOMSelectors.vegan.addEventListener("click", function (loadVeg) {
+  loadVeg.preventDefault();
   clearFields();
   getVegan();
-  loadVeg.preventDefault();
   DOMSelectors.vegan.disabled = true;
   remove();
 
