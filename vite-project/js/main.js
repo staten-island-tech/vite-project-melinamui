@@ -8,9 +8,6 @@ console.log(DOMSelectors);
 import { menu } from "./menu";
 console.log(menu);
 
-const clearFields = function () {
-  DOMSelectors.cards.innerHTML="";
-}
 
 DOMSelectors.popular.addEventListener("click", function (loadPop) {
   clearFields();
@@ -71,6 +68,10 @@ const getVegan = function () {
       );
     });
 };
+
+const clearFields = function () {
+  DOMSelectors.cards.innerHTML="";
+}
 
 /*DOMSelectors.querySelectors("#popular").addEventListener(
   "click",
