@@ -7,9 +7,5 @@
 
 #cards {
   display: flex;
-}
-
-#img {
   width: 50%;
-
 }
