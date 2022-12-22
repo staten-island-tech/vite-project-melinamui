@@ -23,7 +23,7 @@ const menu = [
     chinese_name: "",
     popular: "no",
     vegan: "no",
-    instock: "no",
+    instock: "yes",
     img:"https://www.foxyfolksy.com/wp-content/uploads/2022/05/chicken-feet-dimsum-1200t.jpg",
   },
   {
