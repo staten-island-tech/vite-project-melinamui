@@ -41,7 +41,7 @@ const getPopular = function () {
     .forEach((food) => {
       console.log(food.name);
       DOMSelectors.cards.insertAdjacentHTML(
-        "afterend",
+        "beforeend",
         `<div id = "one"> <img src="${food.img}"/> 
         <h1>${food.name}</h1></div>`
       );
@@ -54,7 +54,7 @@ const getInStock = function () {
     .forEach((food) => {
       console.log(food.name);
       DOMSelectors.cards.insertAdjacentHTML(
-        "afterend",
+        "beforeend",
         `<div id = "one"><img src="${food.img}"/>
       <h1>${food.name}</h1></div> `
       );
@@ -67,7 +67,7 @@ const getVegan = function () {
     .forEach((food) => {
       console.log(food.name);
       DOMSelectors.cards.insertAdjacentHTML(
-        "afterend",
+        "beforeend",
         `<div id = "one"><img src="${food.img}"/> 
       <h1>${food.name}</h1></div> 
       `
