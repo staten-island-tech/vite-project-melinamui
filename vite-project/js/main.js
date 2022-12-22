@@ -13,7 +13,7 @@ DOMSelectors.popular.addEventListener("click", function (loadPop) {
   clearFields();
   getPopular();
   loadPop.preventDefault();
-  loadPop.target.parentElement.remove();
+  loadPop.target.childNodes.remove();
   DOMSelectors.popular.disabled = true;
 });
 
@@ -21,7 +21,7 @@ DOMSelectors.instock.addEventListener("click", function (loadStock) {
   clearFields();
   getInStock();
   loadStock.preventDefault();
-  loadStock.target.parentElement.remove();
+  loadStock.target.childNodes.remove();
   DOMSelectors.instock.disabled = true;
 });
 
@@ -29,7 +29,7 @@ DOMSelectors.vegan.addEventListener("click", function (loadVeg) {
   clearFields();
   getVegan();
   loadVeg.preventDefault();
-  loadVeg.target.parentElement.remove();
+  loadVeg.target.childNodes.remove();
   DOMSelectors.vegan.disabled = true;
 });
 
