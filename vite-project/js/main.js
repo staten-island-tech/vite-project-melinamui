@@ -8,16 +8,6 @@ console.log(DOMSelectors);
 import { menu } from "./menu";
 console.log(menu);
 
-DOMSelectors.emo.addEventListener("click", function () {
-  if (document.body.classList.contains("uwu")) {
-    document.body.classList.add("emo");
-    document.body.classList.remove("uwu");
-  } else {
-    document.body.classList.add("uwu");
-    document.body.classList.remove("emo");
-  }
-});
-
 DOMSelectors.popular.addEventListener("click", function () {
   getPopular();
   DOMSelectors.popular.disabled = true;

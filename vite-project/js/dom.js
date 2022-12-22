@@ -6,8 +6,6 @@ const DOMSelectors = {
   instock: document.getElementById("instock"),
   vegan: document.getElementById("vegan"),
   cards: document.getElementById("cards"),
-  emo: document.getElementsByClassName("emo"),
-  uwu: document.getElementsByClassName("uwu"),
 };
 
 export { DOMSelectors };
