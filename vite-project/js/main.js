@@ -14,6 +14,8 @@ DOMSelectors.popular.addEventListener("click", function (loadPop) {
   getPopular();
   loadPop.preventDefault();
   DOMSelectors.popular.disabled = true;
+  remove();
+
 });
 
 DOMSelectors.instock.addEventListener("click", function (loadStock) {
@@ -21,6 +23,7 @@ DOMSelectors.instock.addEventListener("click", function (loadStock) {
   getInStock();
   loadStock.preventDefault();
   DOMSelectors.instock.disabled = true;
+  remove();
 });
 
 DOMSelectors.vegan.addEventListener("click", function (loadVeg) {
@@ -28,6 +31,8 @@ DOMSelectors.vegan.addEventListener("click", function (loadVeg) {
   getVegan();
   loadVeg.preventDefault();
   DOMSelectors.vegan.disabled = true;
+  remove();
+
 });
 
 const getPopular = function () {
@@ -72,8 +77,12 @@ const getVegan = function () {
 
 const clearFields = function () {
   DOMSelectors.cards.innerHTML="";
+}
+
+const remove = function(){
   DOMSelectors.cards.remove();
 }
+
 
 /*DOMSelectors.querySelectors("#popular").addEventListener(
   "click",
