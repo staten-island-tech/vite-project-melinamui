@@ -8,9 +8,8 @@ console.log(DOMSelectors);
 import { menu } from "./menu";
 console.log(menu);
 
-function remove() {
-  DOMSelectors.cards.remove();
-};
+const element = DOMSelectors.cards;
+element.remove();
 
 const clearFields = function () {
   DOMSelectors.cards.innerHTML="";
@@ -18,7 +17,7 @@ const clearFields = function () {
 
 DOMSelectors.popular.addEventListener("click", function (loadPop) {
   clearFields();
-  remove();
+  element.remove();
   getPopular();
   loadPop.preventDefault();
   DOMSelectors.popular.disabled = true;
@@ -26,7 +25,7 @@ DOMSelectors.popular.addEventListener("click", function (loadPop) {
 
 DOMSelectors.instock.addEventListener("click", function (loadStock) {
   clearFields();
-  remove();
+  element.remove();
   getInStock();
   loadStock.preventDefault();
   DOMSelectors.instock.disabled = true;
@@ -34,7 +33,7 @@ DOMSelectors.instock.addEventListener("click", function (loadStock) {
 
 DOMSelectors.vegan.addEventListener("click", function (loadVeg) {
   clearFields();
-  remove();
+  element.remove();
   getVegan();
   loadVeg.preventDefault();
   DOMSelectors.vegan.disabled = true;
