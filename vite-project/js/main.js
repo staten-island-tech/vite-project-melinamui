@@ -70,7 +70,7 @@ const getVegan = function () {
 };
 
 const clearFields = function () {
-  DOMSelectors.cards.innerHTML="";
+  DOMSelectors.form.innerHTML="";
 }
 
 /*DOMSelectors.querySelectors("#popular").addEventListener(
