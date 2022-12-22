@@ -40,8 +40,8 @@ const getPopular = function () {
       console.log(food.name);
       DOMSelectors.cards.insertAdjacentHTML(
         "afterend",
-        `<div id = "one"> <img src="${food.img}"/> </div>
-        <h1>${food.name}</h1>`
+        `<div id = "one"> <img src="${food.img}"/> 
+        <h1>${food.name}</h1></div>`
       );
     });
 };
@@ -53,8 +53,8 @@ const getInStock = function () {
       console.log(food.name);
       DOMSelectors.cards.insertAdjacentHTML(
         "afterend",
-        `<div id = "one"><img src="${food.img}"/></div>
-      <h1>${food.name}</h1> `
+        `<div id = "one"><img src="${food.img}"/>
+      <h1>${food.name}</h1></div> `
       );
     });
 };
@@ -66,8 +66,8 @@ const getVegan = function () {
       console.log(food.name);
       DOMSelectors.cards.insertAdjacentHTML(
         "afterend",
-        `<div id = "one"><img src="${food.img}"/></div> 
-      <h1>${food.name}</h1>
+        `<div id = "one"><img src="${food.img}"/> 
+      <h1>${food.name}</h1></div> 
       `
       );
     });
