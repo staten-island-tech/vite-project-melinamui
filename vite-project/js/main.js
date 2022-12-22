@@ -9,6 +9,7 @@ import { menu } from "./menu";
 console.log(menu);
 
 
+
 DOMSelectors.popular.addEventListener("click", function (loadPop) {
   clearFields();
   getPopular();
@@ -33,6 +34,20 @@ DOMSelectors.vegan.addEventListener("click", function (loadVeg) {
   remove();
 
 });
+
+const getAllProducts = function (){
+  menu
+    .filter((food) => food.show.includes("all"))
+    .forEach((food) => {
+      console.log(food.name);
+      DOMSelectors.cards.insertAdjacentElement(
+    "afterbegin",
+    `<div id = "one"> <img src="${food.img}
+    <h1>${food.name}</h1></div>
+    `);
+  });
+};
+getAllProducts();
 
 const getPopular = function () {
   menu
