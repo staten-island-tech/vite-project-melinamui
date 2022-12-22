@@ -11,7 +11,7 @@ console.log(menu);
 
 DOMSelectors.popular.addEventListener("click", function (loadPop) {
   clearFields();
-  loadPop.target.parentElement.remove();
+  loadPop.DOMSelectors.cards.remove();
   getPopular();
   loadPop.preventDefault();
   DOMSelectors.popular.disabled = true;
@@ -19,7 +19,7 @@ DOMSelectors.popular.addEventListener("click", function (loadPop) {
 
 DOMSelectors.instock.addEventListener("click", function (loadStock) {
   clearFields();
-  loadStock.target.parentElement.remove();
+  loadStock.DOMSelectors.cards.remove();
   getInStock();
   loadStock.preventDefault();
   DOMSelectors.instock.disabled = true;
@@ -27,7 +27,7 @@ DOMSelectors.instock.addEventListener("click", function (loadStock) {
 
 DOMSelectors.vegan.addEventListener("click", function (loadVeg) {
   clearFields();
-  loadVeg.target.parentElement.remove();
+  loadVeg.DOMSelectors.cards.remove();
   getVegan();
   loadVeg.preventDefault();
   DOMSelectors.vegan.disabled = true;
