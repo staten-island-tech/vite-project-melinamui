@@ -24,7 +24,7 @@ const menu = [
     popular: "no",
     vegan: "no",
     instock: "yes",
-    img:"https://www.foxyfolksy.com/wp-content/uploads/2022/05/chicken-feet-dimsum-1200t.jpg",
+    img: "https://www.foxyfolksy.com/wp-content/uploads/2022/05/chicken-feet-dimsum-1200t.jpg",
   },
   {
     show: "all",
@@ -32,9 +32,8 @@ const menu = [
     chinese_name: "",
     popular: "yes",
     vegan: "yes",
-    instock: "yes",
+    instock: "no",
     img: "https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2FPhoto%2FRecipe%20Ramp%20Up%2F2022-07-How-To-Cook-Bok-Choy%2Fbok_choy_2_of_2",
   },
 ];
 export { menu };
-

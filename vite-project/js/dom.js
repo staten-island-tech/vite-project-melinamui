@@ -1,7 +1,7 @@
 const DOMSelectors = {
   inputs: document.getElementById("inputs"),
   app: document.getElementById("app"),
-  form: document.getElementById("form"),
+  parent: document.getElementsByClassName("parent"),
   popular: document.getElementById("popular"),
   instock: document.getElementById("instock"),
   vegan: document.getElementById("vegan"),

@@ -8,9 +8,14 @@ console.log(DOMSelectors);
 import { menu } from "./menu";
 console.log(menu);
 
+//instead of function(), write the name of the function
+//const testW = function () {
+//console.log("testW");
+//};
+
 DOMSelectors.popular.addEventListener("click", function () {
   getPopular();
-  DOMSelectors.popular.disabled = true;
+  DOMSelectors.instock.disabled = true;
   remove();
 });
 
@@ -27,7 +32,6 @@ DOMSelectors.vegan.addEventListener("click", function () {
 });
 
 const getPopular = function () {
-  DOMSelectors.cards.innerHTML = "";
   menu
     .filter((food) => food.popular.includes("yes"))
     .forEach((food) => {
@@ -41,7 +45,6 @@ const getPopular = function () {
 };
 
 const getInStock = function () {
-  DOMSelectors.cards.innerHTML = "";
   menu
     .filter((food) => food.instock.includes("yes"))
     .forEach((food) => {
@@ -55,7 +58,6 @@ const getInStock = function () {
 };
 
 const getVegan = function () {
-  DOMSelectors.cards.innerHTML = "";
   menu
     .filter((food) => food.vegan.includes("yes"))
     .forEach((food) => {
