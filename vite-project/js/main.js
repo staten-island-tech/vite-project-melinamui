@@ -16,16 +16,20 @@ console.log(menu);
 DOMSelectors.popular.addEventListener("click", function () {
   getPopular();
   DOMSelectors.instock.disabled = true;
+  DOMSelectors.cards.innerHTML="";
+  
 });
 
 DOMSelectors.instock.addEventListener("click", function () {
   getInStock();
   DOMSelectors.instock.disabled = true;
+  DOMSelectors.cards.innerHTML="";
 });
 
 DOMSelectors.vegan.addEventListener("click", function () {
   getVegan();
   DOMSelectors.vegan.disabled = true;
+  DOMSelectors.cards.innerHTML="";
 });
 
 const getPopular = function () {
