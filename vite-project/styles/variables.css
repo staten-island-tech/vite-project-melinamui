@@ -1,7 +1,7 @@
 html,
 body, 
 *{
-  background-color: var(--primary);
+  background-color: lightcoral;
   font-family: "Kosugi Maru", sans-serif;
 }
 
