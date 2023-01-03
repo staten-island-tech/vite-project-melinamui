@@ -1,11 +1,10 @@
 html,
+*{
+  background-color: var(--primary);
+}
 body, 
 *{
   font-family: "Kosugi Maru", sans-serif;
-}
-
-.whole {
-  background-color: var(--primary);
 }
 
 :root {
