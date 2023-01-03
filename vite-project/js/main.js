@@ -16,22 +16,20 @@ console.log(menu);
 DOMSelectors.popular.addEventListener("click", function () {
   getPopular();
   DOMSelectors.instock.disabled = true;
-  remove();
 });
 
 DOMSelectors.instock.addEventListener("click", function () {
   getInStock();
   DOMSelectors.instock.disabled = true;
-  remove();
 });
 
 DOMSelectors.vegan.addEventListener("click", function () {
   getVegan();
   DOMSelectors.vegan.disabled = true;
-  remove();
 });
 
 const getPopular = function () {
+  DOMSelectors.cards.innerHTML="";
   menu
     .filter((food) => food.popular.includes("yes"))
     .forEach((food) => {
@@ -45,6 +43,7 @@ const getPopular = function () {
 };
 
 const getInStock = function () {
+  DOMSelectors.cards.innerHTML="";
   menu
     .filter((food) => food.instock.includes("yes"))
     .forEach((food) => {
@@ -58,6 +57,7 @@ const getInStock = function () {
 };
 
 const getVegan = function () {
+  DOMSelectors.cards.innerHTML="";
   menu
     .filter((food) => food.vegan.includes("yes"))
     .forEach((food) => {
@@ -70,10 +70,10 @@ const getVegan = function () {
       );
     });
 };
-
+/*
 const remove = function () {
   DOMSelectors.cards.remove();
-};
+};*/
 
 /*DOMSelectors.querySelectors("#popular").addEventListener(
   "click",
