@@ -6,7 +6,7 @@
 }
 
 #one {
-  background-color: palevioletred;
+  background-color: var(--primary);
   color: var(--text);
   display: flex;
   flex-direction: column;
@@ -17,4 +17,3 @@
   align-items: center;
   padding: 30px;
 }
-

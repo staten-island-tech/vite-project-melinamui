@@ -2,7 +2,7 @@ html,
 body,
 * {
   font-family: "Kosugi Maru", sans-serif;
-  background-color: var(--primary);
+  background-color: var(--light-pink);
 }
 
 :root {
@@ -12,9 +12,10 @@ body,
   --dark-pink: #ff1493;
   --gray: #252c30;
   --white: #ffffff;
+  --pale-pink: #d87093;
 
   /*Intentions */
-  --primary: var(--light-pink);
+  --primary: var(--pale-pink);
   --secondary: var(--dark-pink);
   --text: var(--black);
 
@@ -27,7 +28,7 @@ body,
 }
 
 .uwu {
-  --primary: var(--light-pink);
+  --primary: var(--pale-pink);
   --secondary: var(--dark-pink);
   --text: var(--black);
 }
