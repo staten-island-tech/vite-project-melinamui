@@ -18,12 +18,3 @@
   padding: 30px;
 }
 
-.emo {
-  --primary: var(--light-blue);
-  --secondary: var(--dark-blue);
-}
-
-.uwu {
-  --primary: var(--light-blue);
-  --secondary: var(--dark-blue);
-}
