@@ -37,6 +37,7 @@ const menu = [
     chinese_name: "",
     popular: "yes",
     vegan: "no",
+    instock: "yes",
     img: "https://redhousespice.com/wp-content/uploads/2022/11/dim-sum-siu-mai-scaled.jpg",
   },
 ];
