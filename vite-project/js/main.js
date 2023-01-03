@@ -12,7 +12,7 @@ console.log(menu);
 //console.log("testW");
 //};
 
-document.querySelector(".theme").addEventListener("click", function () {
+document.querySelector(".emo").addEventListener("click", function () {
   if (document.body.classList.contains("uwu")) {
     document.body.classList.add("emo");
     document.body.classList.remove("uwu");
