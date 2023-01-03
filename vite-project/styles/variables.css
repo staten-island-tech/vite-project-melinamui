@@ -1,7 +1,7 @@
 html,
 body, 
 *{
-  background-color: var(--light-pink);
+  background-color: var(--primary);
   font-family: "Kosugi Maru", sans-serif;
 }
 
@@ -72,7 +72,7 @@ img {
 }
 
 .btn {
-  color: #ff1493;
+  color: var(--secondary);
   background-color: #e8fbff;
   border-color: #1e90ff;
 }
