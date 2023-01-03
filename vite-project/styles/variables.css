@@ -32,8 +32,8 @@ body,
   --text: var(--black);
 }
 .emo {
-  --primary: var(--gray);
-  --secondary: var(--black);
+  --primary: var(--black);
+  --secondary: var(--gray);
   --text: var(--white);
 }
 h1,
