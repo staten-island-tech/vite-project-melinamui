@@ -6,7 +6,7 @@ const DOMSelectors = {
   instock: document.getElementById("instock"),
   vegan: document.getElementById("vegan"),
   cards: document.getElementById("cards"),
-  emo: document.querySelector(".emo"),
+  theme: document.querySelector(".theme"),
   uwu: document.querySelector(".uwu"),
 };
 
