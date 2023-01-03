@@ -1,7 +1,7 @@
 html,
 body, 
 *{
-  background-color: pink;
+  background-color: #ffc0cb;
   font-family: "Kosugi Maru", sans-serif;
 }
 
@@ -9,13 +9,13 @@ body,
   --black: #000;
   --light-blue: #2998ff;
   --dark-blue: #135cc5;
-  --light-red: #f87171;
-  --dark-red: #dc2626;
+  --light-pink: #ffc0cb;
+  --dark-pink: #ff1493;
   --gray: #252c30;
 
   /*Intentions */
-  --primary: var(--light-blue);
-  --secondary: var(--dark-blue);
+  --primary: var(--light-pink);
+  --secondary: var(--dark--pink);
 
   /*Typography */
   --h1: 7.594rem;
@@ -26,8 +26,8 @@ body,
 }
 
 .uwu {
-  --primary: var(--light-red);
-  --secondary: var(--dark-red);
+  --primary: var(--light-pink);
+  --secondary: var(--dark-pink);
 }
 .emo {
   --primary: var(--light-blue);
@@ -72,7 +72,7 @@ img {
 }
 
 .btn {
-  color: deeppink;
+  color: #ff1493;
   background-color: #e8fbff;
-  border-color: dodgerblue;
+  border-color: #1e90ff;
 }
