@@ -12,6 +12,16 @@ console.log(menu);
 //console.log("testW");
 //};
 
+document.querySelector(".theme").addEventListener("click", function () {
+  if (document.body.classList.contains("uwu")) {
+    document.body.classList.add("emo");
+    document.body.classList.remove("uwu");
+  } else {
+    document.body.classList.add("uwu");
+    document.body.classList.remove("emo");
+  }
+});
+
 DOMSelectors.popular.addEventListener("click", function () {
   getPopular();  
 });

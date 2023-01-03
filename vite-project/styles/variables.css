@@ -23,6 +23,15 @@ body {
   --h5: 1.5rem;
 }
 
+.uwu {
+  --primary: var(--light-red);
+  --secondary: var(--dark-red);
+}
+.emo {
+  --primary: var(--light-blue);
+  --secondary: var(--dark-blue);
+}
+
 h1,
 h2,
 h3,
