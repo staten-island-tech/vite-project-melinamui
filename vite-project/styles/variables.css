@@ -1,7 +1,7 @@
 html,
 body, 
 *{
-  background-color: #ffc0cb;
+  background-color: var(--light-pink);
   font-family: "Kosugi Maru", sans-serif;
 }
 
@@ -30,8 +30,8 @@ body,
   --secondary: var(--dark-pink);
 }
 .emo {
-  --primary: var(--light-blue);
-  --secondary: var(--dark-blue);
+  --primary: var(--gray);
+  --secondary: var(--black);
 }
 
 h1,
