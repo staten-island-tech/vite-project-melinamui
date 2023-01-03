@@ -5,7 +5,7 @@ const menu = [
     chinese_name: "",
     popular: "yes",
     vegan: "no",
-    instock: "yes",
+    instock: "no",
     img: "https://redhousespice.com/wp-content/uploads/2017/09/dim-sum-har-gow-dumplings.jpg",
   },
   {
@@ -32,7 +32,7 @@ const menu = [
     chinese_name: "",
     popular: "yes",
     vegan: "yes",
-    instock: "no",
+    instock: "yes",
     img: "https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2FPhoto%2FRecipe%20Ramp%20Up%2F2022-07-How-To-Cook-Bok-Choy%2Fbok_choy_2_of_2",
   },
 ];
