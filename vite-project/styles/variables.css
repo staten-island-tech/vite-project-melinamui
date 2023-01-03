@@ -1,5 +1,6 @@
 html,
-body {
+body, 
+*{
   background: var(--primary);
   font-family: "Kosugi Maru", sans-serif;
 }
