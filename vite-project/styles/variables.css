@@ -1,6 +1,6 @@
 html,
-body, 
-*{
+body,
+* {
   font-family: "Kosugi Maru", sans-serif;
   background-color: var(--primary);
 }
@@ -11,11 +11,11 @@ body,
   --light-pink: #ffc0cb;
   --dark-pink: #ff1493;
   --gray: #252c30;
-  --white: #FFFFFF;
+  --white: #ffffff;
 
   /*Intentions */
   --primary: var(--light-pink);
-  --secondary: var(--dark--pink);
+  --secondary: var(--dark-pink);
   --text: var(--black);
 
   /*Typography */
@@ -76,5 +76,5 @@ img {
 .btn {
   color: var(--secondary);
   background-color: #e8fbff;
-  border-color:var(--light-blue);
+  border-color: var(--light-blue);
 }
