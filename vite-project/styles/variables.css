@@ -4,9 +4,10 @@ body,
   font-family: "Kosugi Maru", sans-serif;
 }
 
-#app {
+.whole {
   background-color: var(--primary);
 }
+
 :root {
   --black: #000;
   --light-blue: #1e90ff;
