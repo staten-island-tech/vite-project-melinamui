@@ -27,11 +27,13 @@ body,
 }
 
 .uwu {
+  background-color: var(--primary);
   --primary: var(--light-pink);
   --secondary: var(--dark-pink);
   --text: var(--black);
 }
 .emo {
+  background-color: var(--primary);
   --primary: var(--black);
   --secondary: var(--gray);
   --text: var(--white);
