@@ -1,4 +1,6 @@
-body {
+html,
+body, 
+*{
   background-color: pink;
   font-family: "Kosugi Maru", sans-serif;
 }
